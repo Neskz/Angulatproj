@@ -1,0 +1,9 @@
+<li [ngClass]="{'list-group-item': true,
+                'list-group-item-success': postnbre>0,
+                'list-group-item-danger': postnbre<0}">
+  <h4>{{postTitre}}</h4>
+  <p>{{ postDate | date: 'short' }}</p>
+  <p> {{postContenu}}</p>
+  <button style="background-color: green; color: white" class="btn btn-success" (click)="onoui()">loveit</button>
+  <button style="background-color: red; color:white" class="btn btn-success" (click)="onnon()">Don't loveit</button>     
+</li>
